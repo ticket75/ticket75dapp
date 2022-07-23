@@ -2,7 +2,7 @@ const initialState = {
   loading: false,
   totalSupply: 0,
   pot: 0,
-  activeTickets: 0,
+  activeTickets: null,
   whenEnd: 0,
   error: false,
   errorMsg: "",

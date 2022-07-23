@@ -222,7 +222,7 @@ function App() {
                 <s.TextDescription> Connect your wallet to check current values</s.TextDescription>
               ): null}
             
-              {data.activeTickets == 0 || data.activeTickets === null ? (
+              {data.activeTickets == 0 ? (
                 <s.TextTitle
                   style={{
                     textAlign: "center",
