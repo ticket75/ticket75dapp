@@ -221,16 +221,31 @@ function App() {
               {blockchain.account === "" || blockchain.smartContract === null ? (
                 <s.TextDescription> Connect your wallet to check current values</s.TextDescription>
               ): null}
-            <s.TextTitle
-              style={{
-                textAlign: "center",
-                fontSize: 35,
-                fontWeight: "bold",
-                color: "var(--accent-text)",
-              }}
-            >
-              {data.activeTickets} Valid tickets minted
-            </s.TextTitle>
+            
+              {data.activeTickets == 0 || data.activeTickets === null ? (
+                <s.TextTitle
+                  style={{
+                    textAlign: "center",
+                    fontSize: 35,
+                    fontWeight: "bold",
+                    color: "var(--accent-text)",
+                  }}
+                >
+                Mint a ticket to start a new run
+                </s.TextTitle>
+                ):null
+              }
+               (<s.TextTitle
+                  style={{
+                    textAlign: "center",
+                    fontSize: 35,
+                    fontWeight: "bold",
+                    color: "var(--accent-text)",
+                  }}
+                  >
+                  {data.activeTickets} Valid tickets minted
+                </s.TextTitle>)
+            
             <s.TextDescription
               style={{
                 textAlign: "center",
