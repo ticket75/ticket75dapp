@@ -252,7 +252,7 @@ function App() {
                 color: "var(--primary-text)",
               }}
             >
-              Max 25 ticket per transaction<br></br>
+              Max 25 tickets per transaction<br></br>
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
                 Contract address: {CONFIG.CONTRACT_ADDRESS}
               </StyledLink>
