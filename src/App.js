@@ -215,7 +215,7 @@ function App() {
               backgroundColor: "rgba(0,0,0,0)",
               padding: 24,
               borderRadius: 24,
-              border: "none",
+              border: "3px solid rgba(255,255,255,1)",
             }}
           >
               {blockchain.account === "" || blockchain.smartContract === null ? (
@@ -235,7 +235,7 @@ function App() {
                 </s.TextTitle>
                 ):null
               }
-               (<s.TextTitle
+               <s.TextTitle
                   style={{
                     textAlign: "center",
                     fontSize: 35,
@@ -244,7 +244,7 @@ function App() {
                   }}
                   >
                   {data.activeTickets} Valid tickets minted
-                </s.TextTitle>)
+                </s.TextTitle>
             
             <s.TextDescription
               style={{
@@ -266,6 +266,7 @@ function App() {
                   {CONFIG.NETWORK.SYMBOL}.<br></br>
                   The current jackpot is {data.pot} eth <br></br>
                   Run will end in: {data.whenEnd} seconds<br></br>
+                  Try your luck.<br></br>
                 </s.TextDescription>
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
